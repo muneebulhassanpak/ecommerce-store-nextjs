@@ -1,12 +1,16 @@
+import Image from "next/image";
+import Link from "next/link";
 export default function Page() {
   return (
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className=" max-w-[600px] mx-auto w-full py-10 rounded-lg dark:bg-white px-4 md:px-0">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-            <img
-              alt="Your Company"
-              src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+            <Image
+              alt="Logo of Eccom"
+              width={150}
+              height={100}
+              src="/mobile-shopping.png"
               className="mx-auto h-10 w-auto"
             />
             <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
@@ -76,12 +80,12 @@ export default function Page() {
 
             <p className="mt-10 text-center text-sm text-gray-500">
               Don't have an account?{" "}
-              <a
+              <Link
                 href="/signup"
                 className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
               >
                 Signup
-              </a>
+              </Link>
             </p>
           </div>
         </div>
