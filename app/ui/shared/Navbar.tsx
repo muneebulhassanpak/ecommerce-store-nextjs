@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+
 import {
   Dialog,
   DialogPanel,
@@ -8,6 +9,7 @@ import {
   PopoverGroup,
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Example() {
@@ -22,9 +24,11 @@ export default function Example() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img
-              alt=""
-              src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+            <Image
+              alt="Logo of Eccom"
+              width={150}
+              height={100}
+              src="/mobile-shopping.png"
               className="h-8 w-auto"
             />
           </a>
@@ -85,9 +89,11 @@ export default function Example() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                alt=""
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+              <Image
+                alt="Logo of Eccom"
+                width={150}
+                height={100}
+                src="/mobile-shopping.png"
                 className="h-8 w-auto"
               />
             </a>
